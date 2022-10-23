@@ -21,10 +21,12 @@ def extract_features(img_path,model):
     preprocessed_img = preprocess_input(expand_img)
     result_to_resnet = model.predict(preprocessed_img)
     flatten_result = result_to_resnet.flatten()
+    
     # normalizing
     result_normlized = flatten_result / norm(flatten_result)
 
     return result_normlized
+
 #print(os.listdir('fashion_small/images'))
 img_files = []
 
