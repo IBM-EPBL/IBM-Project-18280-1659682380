@@ -7,42 +7,34 @@
     <title>Registration Form</title>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>SignIn Form</h1>
-        </div>
+    <div class="center">
+        <h1>SignIn Form</h1>
         {% if msg %}
-            <div class="message">
-                <span>{{msg}}</span> 
-            </div>   
+            <span>{{msg}}</span>
         {% endif %}
-        <div class="form-container">
-            <form action="/register" method="POST">
-                <div class="form-field-container">
-                    <label for="email">Name</label>
-                    <input type="text" name="name" required>
-                </div>
-                <div class="form-field-container">
-                    <label for="rollno">Roll No</label>
-                    <input type="text" name="rollno" required>
-                </div>
-                <div class="form-field-container">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" required>
-                </div>
-                <div class="form-field-container">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" required>
-                </div>
-                <div class="form-field-container">
-                    <button type="submit">Submit</button>
-                    <button type="reset">Cancel</button>
-                </div>
-            </form>
-        </div>
-        <div class="footer">
-            <span>Already have an account? <a href="/login">Login</a></span>
-        </div>
+        
+    <form action="/register" method="POST">
+            <div class="inputbox">
+                <label for="email">Name</label>
+                <input type="text" name="name" required>
+            </div>
+            <div class="inputbox">
+                <label for="rollno">Roll No</label>
+                <input type="text" name="rollno" required>
+            </div>
+            <div class="inputbox">
+                <label for="email">Email</label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="inputbox">
+                <label for="password">Password</label>
+                <input type="password" name="password" required>
+            </div>
+            <button type="submit">Submit</button>
+            <button type="reset">Cancel</button>
+        </form>
+
+        <span>Already have an account? <a href="/login">Login</a></span>
     </div>
 </body>
 </html>
