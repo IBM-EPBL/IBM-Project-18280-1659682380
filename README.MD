@@ -3,7 +3,8 @@
 
 ## Team ID: PNT2022TMID05569
 ________________________________
-TEAM:<ul><li>
+<b>TEAM:</b>
+<ul><li>
   Abishek PS (L)</li><li>
   Aditya Kushwaha (M)</li><li>
   Arjun RU (M)</li><li>
