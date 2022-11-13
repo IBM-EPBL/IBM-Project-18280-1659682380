@@ -3,8 +3,8 @@
 
 ## Team ID: PNT2022TMID05569
 ________________________________
-### TEAM:
-### Abishek PS (L)
-### Aditya Kushwaha (M)
-### Arjun RU (M)
-### Ashwin Balaji PL (M)
+TEAM:
+Abishek PS (L)
+Aditya Kushwaha (M)
+Arjun RU (M)
+Ashwin Balaji PL (M)
