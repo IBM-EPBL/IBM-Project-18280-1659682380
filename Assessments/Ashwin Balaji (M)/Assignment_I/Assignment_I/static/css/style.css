@@ -1,0 +1,46 @@
+.header{
+    text-align: center;
+}
+.container{
+    margin: 80px auto;
+    width: 600px;
+    padding-left:  20px;
+    padding-right:  20px;
+}
+.form-container{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.form-field-container{
+    padding: 10px 5px;
+}
+.form-input-field{
+    padding: 10px 5px;
+}
+label{
+    display: block;
+    padding: 5px 0px;
+    font-size: 20px;
+}
+input{
+    width: 100%;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+button{
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 47%;
+}
+button[type=submit]{
+    background-color: green;
+    margin-right: 15px;
+}
+button[type=reset]{
+    background-color: blue;
+    margin-left: 12px;
+}
