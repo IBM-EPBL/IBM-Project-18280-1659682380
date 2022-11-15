@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <title>Login Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Login Form</h1>
+        </div>
+        {% if msg %}
+            <div class="message">
+                <span>{{msg}}</span> 
+            </div>   
+        {% endif %}
+        <div class="form-container">
+            <form action="/login" method="POST">
+                <div class="form-field-container">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" required>
+                </div>
+                <div class="form-field-container">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" required>
+                </div>
+                <div class="form-field-container">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Cancel</button>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <span>Don't have an account? <a href="/register">Sign Up</a></span>
+        </div>
+    </div>
+</body>
+</html>
