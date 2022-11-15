@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="center">
+        <h1>SignIn Form</h1>
+        {% if msg %}
+            <span>{{msg}}</span>
+        {% endif %}
+        
+    <form action="/register" method="POST">
+            <div class="inputbox">
+                <label for="email">Name</label>
+                <input type="text" name="name" required>
+            </div>
+            <div class="inputbox">
+                <label for="rollno">Roll No</label>
+                <input type="text" name="rollno" required>
+            </div>
+            <div class="inputbox">
+                <label for="email">Email</label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="inputbox">
+                <label for="password">Password</label>
+                <input type="password" name="password" required>
+            </div>
+            <button type="submit">Submit</button>
+            <button type="reset">Cancel</button>
+        </form>
+
+        <span>Already have an account? <a href="/login">Login</a></span>
+    </div>
+</body>
+</html>
