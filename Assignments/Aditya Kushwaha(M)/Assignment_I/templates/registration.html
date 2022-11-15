@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Registration Form</h1>
+        </div>
+        <div class="form-container">
+            <form action="/register" method="POST">
+                <div class="form-field-container">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="form-field-container">
+                    <label for="email">Email ID</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-field-container">
+                    <label for="phone">Contact Number</label>
+                    <input type="tel" name="phone" required>
+                </div>
+                <div class="form-field-container">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
