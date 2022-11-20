@@ -4,13 +4,13 @@ from flask_cors import CORS
 from flask_bcrypt import Bcrypt
 from datetime import date
 import json
-dsn_hostname = "9938aec0-8105-433e-8bf9-0fbb7e483086.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud"
-dsn_uid = "llg47061"
-dsn_pwd = "SGk1gUnQkd6ECxfp"
+dsn_hostname = ""
+dsn_uid = ""
+dsn_pwd = ""
 
 dsn_driver = "{IBM DB2 ODBC DRIVER}"
-dsn_database = "bludb"
-dsn_port = "32459"
+dsn_database = ""
+dsn_port = ""
 dsn_protocol = "TCPIP"
 dsn_security = "SSL"
 
